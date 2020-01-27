@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+    <TextView
+        android:id="@+id/lblAppName"
+        android:layout_margin="14dp"
+        android:textAlignment="center"
+        android:text="@string/app_name"
+        style="@style/supertitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/mipesca" />
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_margin="14dp"
+        android:textAlignment="center"
+        android:text="@string/headerLogin"
+        style="@style/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/texto"
+        >
+
+        <EditText
+            android:id="@+id/txtUsuario"
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:hint="@string/lblUsuario"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/texto"
+        >
+    <EditText
+        android:id="@+id/txtContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/texto"
+        android:layout_margin="14dp"
+        android:hint="@string/lblContrasena"
+        tools:ignore="Autofill"
+        android:inputType="textPassword"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Switch
+            android:id="@+id/chkRecordar"
+            style="@style/texto"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:width="150dp"
+            android:layoutDirection="rtl"
+            android:switchPadding="10dp"
+            android:text="@string/chkRecordar"
+            tools:ignore="InefficientWeight" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/boton"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:text="@string/btnEntrar"
+        />
+
+
+    <TextView
+        android:id="@+id/btnOlvido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/etiqueta"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+
+        android:text="@string/btnOlvido"
+        android:textAlignment="center"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/lblRegistrar"
+            style="@style/etiqueta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnRegistrar"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblPatrocinador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/minitexto"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/lblPatrocinador"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/lblPatrocinador2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/minitexto"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/lblPatrocinador2"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".fragmentos.ViajeComplementoFragment">
+
+        <LinearLayout
+            android:id="@+id/divPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:orientation="vertical"
+            android:visibility="visible"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listViewViajeRecurso"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+            <TextView
+                android:id="@+id/lblPreguntaCaptura"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/lblViajePregunta"
+                style="@style/texto"
+                tools:ignore="Autofill" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnViajeNoContinuar"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                style="@style/boton"
+                android:text="@string/lblViajeNo" />
+                <Button
+                    android:id="@+id/btnViajeContinuar"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:layout_weight="1"
+                    style="@style/boton"
+                    android:text="@string/lblViajeSi" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/divComplemento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblViajeFhRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:layout_weight="1"
+                    android:hint="@string/lblViajeFechaRegistro"
+                    style="@style/texto"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/txtViajeFhRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:layout_weight="1"
+                    style="@style/texto"
+                    tools:ignore="Autofill"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblViajeComunidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:layout_weight="1"
+                    android:text="@string/lblViajeComunidad"
+                    style="@style/texto"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViajeComunidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:inputType="textCapCharacters"
+                    android:layout_weight="1"
+                    style="@style/texto"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblViajeArtePesca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:layout_weight="1"
+                    android:text="@string/lblViajeArtePesca"
+                    style="@style/texto"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViajeArtePesca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:inputType="textCapCharacters"
+                    android:layout_weight="1"
+                    style="@style/texto"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ilViajeRecurso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                <AutoCompleteTextView
+                    android:id="@+id/txtViajeRecurso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:hint="@string/lblViajeRecurso"
+                    android:inputType="textCapCharacters"
+                    style="@style/texto"
+                    />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconViajeRecurso"
+                    android:src="@drawable/baseline_arrow_drop_down_black_24"
+                    android:layout_marginRight="14dp"
+                    android:layout_alignTop="@+id/ilViajeRecurso"
+                    android:layout_alignBottom="@+id/ilViajeRecurso"
+                    android:layout_alignRight="@+id/ilViajeRecurso"
+                    />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ilViajeCaptura"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    >
+                <EditText
+                    android:id="@+id/txtViajeCaptura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/lblViajeCaptura"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    style="@style/texto"
+                    tools:ignore="Autofill" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ilViajePrecio"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    >
+                <EditText
+                    android:id="@+id/txtViajePrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/lblViajePrecio"
+                    android:inputType="numberSigned"
+                    android:maxLength="5"
+                    style="@style/texto"
+                    tools:ignore="Autofill" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ilViajeNoPiezas"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+                <EditText
+                    android:id="@+id/txtViajeNoPiezas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/lblViajeNoPiezas"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    style="@style/texto"
+                    tools:ignore="Autofill" />
+                </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+            <EditText
+                android:id="@+id/txtViajeCombustible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:ems="10"
+                android:hint="@string/lblViajeCombustible"
+                android:inputType="number"
+                android:maxLength="5"
+                style="@style/texto"
+                android:visibility="gone"
+                tools:ignore="Autofill" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ilViajePresentacion"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                >
+            <AutoCompleteTextView
+                android:id="@+id/txtViajePresentacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:hint="@string/lblViajePresentacion"
+                android:inputType="textCapCharacters"
+                style="@style/texto"
+                tools:ignore="Autofill" />
+            </android.support.design.widget.TextInputLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconViajePresentacion"
+                    android:src="@drawable/baseline_arrow_drop_down_black_24"
+                    android:layout_marginRight="14dp"
+                    android:layout_alignTop="@+id/ilViajePresentacion"
+                    android:layout_alignBottom="@+id/ilViajePresentacion"
+                    android:layout_alignRight="@+id/ilViajePresentacion"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnRegresarViaje"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    style="@style/boton"
+                    android:text="@string/btnViajeRegresar" />
+            <Button
+                android:id="@+id/btnRegistrarViaje"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                style="@style/boton"
+                android:text="@string/btnViajeRegistrar" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtViajeUsuarioId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtViajePescadorId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtViajeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/txtViajeComunidadId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtViajeRecursoId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtViajeArtePescaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtViajePresentacionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

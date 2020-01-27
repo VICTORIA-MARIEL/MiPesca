@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="55dip"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Switch
+        android:id="@+id/lblListSwitch"
+        style="@style/midtexto"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layoutDirection="rtl" />
+    <!--TextView
+        android:id="@+id/lblListItem"
+        style="@style/midtexto"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="6"
+        android:layout_width="0px"
+        android:layout_height="wrap_content" /-->
+
+    </LinearLayout>
+
+</LinearLayout>

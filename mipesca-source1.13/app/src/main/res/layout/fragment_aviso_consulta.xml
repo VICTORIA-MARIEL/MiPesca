@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.AvisoConsultaFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ilFhInicio"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="7dp"
+            >
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/txtFhInicio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/ic_calendar"
+                android:hint="@string/lblConsultaAvisoFechaInicio"
+                app:met_mask="##/##/####"
+                android:inputType="date"
+                style="@style/texto"
+                tools:ignore="Autofill" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ilFhFInal"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="14dp"
+            >
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/txtFhFin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/ic_calendar"
+                android:hint="@string/lblConsultaAvisoFechaFinal"
+                app:met_mask="##/##/####"
+                android:inputType="date"
+                style="@style/texto"
+                tools:ignore="Autofill" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnConsultaAvisoLimpiar"
+            style="@style/boton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_weight="1"
+            android:text="@string/btnConsultaAvisoLimpiar" />
+
+        <Button
+            android:id="@+id/btnConsultaAvisoGenerar"
+            style="@style/boton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_weight="1"
+            android:text="@string/btnConsultaAvisoGenerar"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblSinRegistros"
+            style="@style/midtexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lblSinRegistros"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_margin="14dp">
+
+
+        </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listViewAviso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scrollbars="vertical"/>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/fabAddAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_plus"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"/>
+</FrameLayout>

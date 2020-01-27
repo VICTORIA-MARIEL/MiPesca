@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="4dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/lblAvisoFhRegistro"
+                            style="@style/midetiqueta"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:text="@string/lblListadoAvisoFhRegistro"/>
+                        <TextView
+                            android:id="@+id/lblAvisoPeriodo"
+                            style="@style/midetiqueta"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:text="@string/lblListadoAvisoPeriodo"/>
+                        <TextView
+                            android:id="@+id/lblAvisoEstatus"
+                            style="@style/midetiqueta"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:text="@string/lblListadoAvisoEstatus"/>
+
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtAvisoFhRegistro"
+                            style="@style/midtexto"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textStyle="italic"
+                            android:text="21/02/2019"
+                            />
+                        <TextView
+                            android:id="@+id/txtAvisoPeriodo"
+                            style="@style/midtexto"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textStyle="italic"
+                            android:text="01/02/2019 al 01/02/2021"
+                            />
+                        <TextView
+                            android:id="@+id/txtAvisoEstatus"
+                            style="@style/midtexto"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textStyle="italic"
+                            android:text="INACTIVO"
+                            />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#ffffff"/>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/lblAvisoOfnaPesca"
+                            style="@style/midetiqueta"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:text="@string/lblListadoAvisoOfnaPesca"/>
+                        <TextView
+                            android:id="@+id/lblAvisoPermiso"
+                            style="@style/midetiqueta"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textAlignment="center"
+                            android:text="@string/lblListadoAvisoPermiso"/>
+                        <TextView
+                            android:id="@+id/lblAvisoSitio"
+                            style="@style/midetiqueta"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textAlignment="center"
+                            android:text="@string/lblListadoAvisoSitio"
+                            />
+                        <TextView
+                            android:id="@+id/lblAvisoRecursos"
+                            style="@style/midetiqueta"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textAlignment="center"
+                            android:text="@string/lblListadoAvisoRecursos"
+                            />
+
+
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtAvisoOfnaPesca"
+                            style="@style/midtexto"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textStyle="italic"
+                            android:text="250 kgs"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtAvisoPermiso"
+                            style="@style/midtexto"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textAlignment="center"
+                            android:textStyle="italic"
+                            android:text="250"
+                            />
+                        <TextView
+                            android:id="@+id/txtAvisoSitio"
+                            style="@style/midtexto"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textAlignment="center"
+                            android:textStyle="italic"
+                            android:text="2000"
+                            />
+                        <TextView
+                            android:id="@+id/txtAvisoRecursos"
+                            style="@style/midtexto"
+                            android:layout_weight="1"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:textAlignment="center"
+                            android:textStyle="italic"
+                            android:text="12 Recursos"
+                            />
+
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/outline_assignment_24" />
+        </LinearLayout>
+        </LinearLayout>
+</android.support.v7.widget.CardView>

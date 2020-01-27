@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#005e77</color>
+    <color name="colorPrimaryDark">#173dff</color>
+    <color name="colorPrimaryLight">#dff2f8</color>
+    <color name="colorAccent">#89a3aa</color>
+    <color name="colorPrimaryText">#005e77</color>
+    <color name="colorSecondaryText">#89a3aa</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#89a3aa</color>
+    <color name="colorWhite">#FFF</color>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

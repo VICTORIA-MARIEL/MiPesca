@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.sit.pesca">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_mipesca"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.RecuperarUsuarioActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AvisoViajeActivity" />
+        <activity
+            android:name=".activity.ConfirmarRegistroActivity"
+            android:label="@string/headerConfirmarRegistro" />
+        <activity
+            android:name=".activity.NuevaContrasenaActivity"
+            android:label="@string/headerRecuperarNvaContrasena" />
+        <activity android:name=".activity.RecuperarContrasenaPreguntaActivity" />
+        <activity
+            android:name=".activity.RecuperarContrasenaActivity"
+            android:label="@string/headerRecuperarContrasea" />
+        <activity
+            android:name=".activity.PescadorRegistroActivity"
+            android:label="@string/headerNuevoRegistro"></activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/headerViaje"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service
+            android:name=".jobs.SincronizacionJOb"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

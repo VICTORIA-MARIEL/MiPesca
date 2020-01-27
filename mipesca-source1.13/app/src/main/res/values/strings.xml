@@ -1,0 +1,281 @@
+<resources>
+    <string name="app_name">MiPesca</string>
+    <string name="cerra_sesion">¿Desea cerrar su sesión en la app?</string>
+    <string name="lblSinRegistros">***No se encontraron registros.***</string>
+
+    <!--Login-->
+    <string name="headerLogin">Inicio de Sesión</string>
+    <string name="lblUsuario">Usuario:</string>
+    <string name="lblContrasena">Contraseña:</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="btnOlvido">¿Olvidaste el correo electrónico o contraseña?</string>
+    <string name="btnRegistrar">¿Aún no tienes una cuenta? Registrate <u>aquí</u></string>
+    <string name="chkRecordar">Recordarme</string>
+    <string name="lblPatrocinador">Financiado por National Geographic</string>
+    <string name="lblPatrocinador2">Desarrollado por Centro para Biodiversidad Marina y la Conservación A.C.</string>
+
+    <!--Nuevo Registro-->
+    <string name="headerNuevoRegistro">Nuevo Registro</string>
+    <string name="lblUsuarioLogin">Usuario:</string>
+    <string name="lblUsuarioContrasena">Contraseña:</string>
+    <string name="lblUsuarioConfContrasena">Confirmar Contraseña:</string>
+    <string name="lblPescadorNombre">Nombre:</string>
+    <string name="lblPescadorFhNacimiento">Fecha Nacimiento:</string>
+    <string name="lblPescadorTelefono">Teléfono:</string>
+    <string name="lblPescadorEmail">Correo:</string>
+    <string name="lblPescadorIndependiente">¿Es pescador independiente?</string>
+    <string name="lblPescadorMunicipio">Municipio:</string>
+    <string name="lblPescadorComunidad">Comunidad:</string>
+    <string name="lblPescadorCooperativa">Cooperativa:</string>
+    <string name="lblPescadorPermiso">Permiso:</string>
+    <string name="btnPescadorRegistrar">Registrar</string>
+    <string name="btnPescadorCancelar">Cancelar</string>
+
+    <!--Confirmar Registro-->
+    <string name="headerConfirmarRegistro">Confirmar Registro</string>
+    <string name="lblPescadorConfirmar">Ingrese su código de confirmación:</string>
+    <string name="btnPescadorConfirmarAceptar">Aceptar</string>
+    <string name="btnPescadorConfirmarCancelar">Cancelar</string>
+
+    <!--Recuperar Usuario-->
+    <string name="headerRecuperarUsuario">Recuperar Usuario</string>
+
+    <!--Recuperar Contraseña-->
+    <string name="headerRecuperarContrasea">Recuperar Contraseña</string>
+    <string name="lblRecuperarContrasenaInfo">Recuperar Contraseña</string>
+    <string name="lblRecuperarContrasenaUsuaurio">Usuario:</string>
+    <string name="lblRecuperarContrasenaPregunta">¿No recuerda su usuario?</string>
+    <string name="btnRecuperarContrasenaEnviar">Enviar</string>
+    <string name="btnRecuperarContrasenaCancelar">Cancelar</string>
+
+    <!--Recuperar->Pregunta-->
+    <string name="headerRecuperarPregunta">Pregunta para Recuperar Contraseña</string>
+    <string name="lblRecuperarPregunta">Pregunta</string>
+    <string name="txtRecuperarPreguntaRespuesta">Respuesta</string>
+    <string name="btnRecuperarPreguntaEnviar">Enviar</string>
+    <string name="btnRecuperarPreguntaCancelar">Cancelar</string>
+
+    <!--Recuperar->Nueva Contrasena Recuperar-->
+    <string name="headerRecuperarNvaContrasena">Nueva Contraseña</string>
+    <string name="lblNuevaContrasena">Nueva Contraseña:</string>
+    <string name="lblNuevaContrasenaConfirmar">Confirmar Contraseña:</string>
+    <string name="btnNuevaContrasenaGuardar">Guardar</string>
+    <string name="btnNuevaContrasenaCancelar">Cancelar</string>
+    <!--Viaje-->
+    <string name="headerViaje">Viaje de Pesca</string>
+    <string name="lblViajeFechaRegistro">Fecha:</string>
+    <string name="lblViajeMunicipio">Municipio:</string>
+    <string name="lblViajeComunidad">Comunidad:</string>
+    <string name="lblViajeRecurso">Recurso:</string>
+    <string name="lblViajeArtePesca">Arte de Pesca:</string>
+    <string name="lblViajeCaptura">Captura(kgs):</string>
+    <string name="lblViajePrecio">Precio($):</string>
+    <string name="lblViajeNoPiezas">No. Piezas:</string>
+    <string name="lblViajeCombustible">Combustible(lts):</string>
+    <string name="lblViajeCombustibleConsulta">Combustible:</string>
+    <string name="lblViajePresentacion">Presentación:</string>
+    <string name="btnViajeRegistrar">Registrar</string>
+    <string name="btnViajeRegresar">Regresar</string>
+    <!--Viaje -> Pregunta -->
+    <string name="headerViajePregunta">Viaje de Pesca</string>
+    <string name="lblViajePregunta">¿Desea seguir agregando otras especies?</string>
+    <string name="lblViajeSi">Continuar</string>
+    <string name="lblViajeNo">Finalizar</string>
+
+    <!--Viaje -> Terminado-->
+    <string name="headerViajeTerminado">Viaje de Pesca</string>
+    <string name="lblViajeFinalizada">El viaje ha finalizado con folio número:</string>
+    <string name="btnViajeFinalizada">Aceptar</string>
+    <!--Viaje -> Complementar-->
+    <string name="headerViajeComplemento">Viaje de Pesca</string>
+    <string name="btnViajeGuardar">Guardar</string>
+    <string name="btnViajeFinalizar">Finalizar</string>
+
+    <!--Reporte de Pesca-->
+    <string name="headerReportePesca">Reporte de Pesca</string>
+    <string name="lblReportePescaPeriodo">Periodo:</string>
+    <string name="lblReportePescaFechaInicio">Fecha Inicio:</string>
+    <string name="lblReportePescaFechaFinal">Fecha Final:</string>
+    <string name="lblReportePescaRecurso">Recurso:</string>
+    <string name="btnReportePescaGenerar">Generar</string>
+    <string name="btnReportePescaLimpiar">Limpiar</string>
+    <string name="lblReportePescaAcumulado">Acumulado:</string>
+    <string name="lblReportePescaPorDia">Por día:</string>
+
+    <!--Historico de Pesca-->
+    <string name="headerHistoricoPesca">Histórico de Pesca</string>
+    <string name="lblConsultaViajeFechaInicio">Fecha Inicio:</string>
+    <string name="lblConsultaViajeFechaFinal">Fecha Final:</string>
+    <string name="lblConsultaViajeRecurso">Recurso:</string>
+    <string name="btnConsultaViajeGenerar">Buscar</string>
+    <string name="btnConsultaViajeLimpiar">Limpiar</string>
+
+    <!--Consulta de Aviso-->
+    <string name="headerConsultaAviso">Consultar Avisos de Arribo</string>
+    <string name="lblConsultaAvisoFechaInicio">Fecha Inicio:</string>
+    <string name="lblConsultaAvisoFechaFinal">Fecha Final:</string>
+    <string name="lblConsultaAvisoRecurso">Recurso:</string>
+    <string name="btnConsultaAvisoGenerar">Buscar</string>
+    <string name="btnConsultaAvisoLimpiar">Limpiar</string>
+
+
+    <!--Aviso de Arribo-->
+    <string name="headerAvisoArribo">Generar Aviso de Arribo</string>
+
+    <string name="lblAvisoFhSolicitud">Fecha Solicitud</string>
+    <string name="lblOfnapesca">Oficina Pesca</string>
+    <string name="lblAvisoPeriodoInicio">Periodo Inicio</string>
+    <string name="lblAvisoPeriodoFin">Periodo Fin</string>
+    <string name="lblAvisoDuracion">Duración</string>
+    <string name="lblAvisoPermiso">Permiso</string>
+    <string name="lblAvisoNombreEmbarcacion">Embarcación</string>
+    <string name="lblAvisoRnpaEmbarcacion">RNPA</string>
+    <string name="lblAvisoMatricula">Matrícula</string>
+    <string name="lblAvisoNoEmbarcaciones">No. Embarcaciones</string>
+    <string name="lblAvisoSitioDesembarqueEncabezado">Información de Desembarque</string>
+    <string name="lblAvisoSitioDesembarqueNombre">Sitio</string>
+    <string name="lblAvisoSitioDesembarqueClave">Clave</string>
+    <string name="lblAvisoSitio">Sitio de Captura</string>
+    <string name="lblAvisoZonaPesca">Zona de Pesca</string>
+    <string name="lblAvisoEsPesqueriaAcuacultural">¿Es pesquería acuacultural?</string>
+    <string name="lblAvisoDiasEfectivos">Días Efectivos</string>
+    <string name="lblAvisoFolio">Folio</string>
+    <string name="btnAvisoGuardar">Guardar</string>
+
+    <string name="btnAvisoGenerar">Generar</string>
+    <string name="btnAvisoLimpiar">Limpiar</string>
+    <string name="btnAvisoDescargarLocal">Ver Local</string>
+    <string name="btnAvisoDescargarExterno">Ver Externo</string>
+    <string name="btnValidarPermiso">Validar</string>
+
+    <!--Permiso-->
+    <string name="headerPermiso">Registro de Permiso de Pesca</string>
+    <string name="lblPermisoFhVigenciaInicio">Inicio Vigencia</string>
+    <string name="lblPermisoFhVigenciaFin">Fin Vigencia</string>
+    <string name="lblPermisoFhVigenciaDuracion">Duración</string>
+    <string name="lblPermisoArtepesca">Arte de Pesca</string>
+    <string name="lblPermisoNumero">No.Permiso</string>
+    <string name="lblPermisoTitular">Titular</string>
+    <string name="lblPermisoMunicipio">Municipio</string>
+    <string name="lblPermisoNombreEmbarcacion">Embarcación</string>
+    <string name="lblPermisoRnpaEmbarcacion">RNPA</string>
+    <string name="lblPermisoMatricula">Matrícula</string>
+    <string name="lblPermisoNoEmbarcaciones"># Embarcaciones</string>
+    <string name="lblPermisoSitioDesembarqueEncabezado">Información de Desembarque</string>
+    <string name="lblPermisoSitioDesembarqueNombre">Sitio</string>
+    <string name="lblPermisoSitioDesembarqueClave">Clave</string>
+    <string name="lblPermisoZonaPesca">Zona de Pesca</string>
+    <string name="lblPermisoTonelaje">Tonelaje (kg)</string>
+    <string name="lblPermisoMarcaMotor">Marca Motor</string>
+    <string name="lblPermisoPotenciaHp">Potencia (hp)</string>
+    <string name="lblPermisoFhExpedicion">Fecha Expedición</string>
+    <string name="lblPermisoParaPesqueria">Para pesquería</string>
+    <string name="lblPermisoArteCantidad">Cantidad</string>
+    <string name="lblPermisoArteCaracteristica">Característica</string>
+    <string name="lblPermisoLugarExpedicion">Lugar Expedición</string>
+
+    <string name="btnPermisoGuardar">Guardar</string>
+    <string name="btnPermisoEditar">Editar</string>
+    <string name="btnPermisoRegresar">Regresar</string>
+
+    <!--Aviso de Arribo Confirmacion-->
+    <string name="headerAvisoConfirmacion">Confirmación Aviso de Arribo</string>
+    <string name="lblAvisoConfirmacion">A continuación puede ver o descargar el aviso de arribo.</string>
+    <string name="lblAvisoCompartir">¿Desea compartir el aviso de arribo?.</string>
+    <string name="lblAvisoWhatsapp">Whatsapp</string>
+    <string name="lblAvisoGmail">Gmail</string>
+    <string name="lblAvisoOtros">Otros</string>
+    <string name="lblAvisoOutlook">Outlook</string>
+    <string name="lblAvisoLocal">Local</string>
+    <string name="lblAvisoExterno">Externo</string>
+
+    <!--Configuracion-->
+    <string name="headerConfiguracion">Mi Perfil</string>
+    <string name="lblConfUsuarioLogin">Usuario:</string>
+    <string name="lblConfUsuarioContrasena">Contraseña:</string>
+    <string name="lblConfPescadorNombre">Nombre:</string>
+    <string name="lblConfPescadorFhNacimiento">Fecha Nacimiento:</string>
+    <string name="lblConfPescadorTelefono">Teléfono:</string>
+    <string name="lblPreguntas">Pregunta:</string>
+    <string name="lblConfPescadorEmail">Correo:</string>
+    <string name="lblConfPescadorIndependiente">¿Es pescador independiente?</string>
+    <string name="lblConfPescadorMunicipio">Municipio:</string>
+    <string name="lblConfPescadorComunidad">Comunidad:</string>
+    <string name="lblConfPescadorCooperativa">Cooperativa:</string>
+    <string name="lblConfPescadorPermiso">Permiso:</string>
+    <string name="lblConfPescadorPregunta">Pregunta:</string>
+    <string name="lblConfPescadorRespuesta">Respuesta:</string>
+    <string name="btnConfGuardar">Guardar</string>
+    <!--Sincronizacion-->
+    <string name="headerSincronizacion">Sincronizar</string>
+    <string name="lblSincronizacionAhora">Sincronizar ahora:</string>
+    <string name="lblSincronizacionHora">Hora:</string>
+    <string name="lblSincronizacionAMPM">AM/PM:</string>
+    <string name="lblSincronizacionDias">Días</string>
+    <string name="lblSincronizacionLunes">Lunes</string>
+    <string name="lblSincronizacionMartes">Martes</string>
+    <string name="lblSincronizacionMiercoles">Miércoles</string>
+    <string name="lblSincronizacionJueves">Jueves</string>
+    <string name="lblSincronizacionViernes">Viernes</string>
+    <string name="lblSincronizacionSabado">Sábado</string>
+    <string name="lblSincronizacionDomingo">Domingo</string>
+    <string name="btnSincronizacionTodos">Todos los días</string>
+    <string name="btnSincronizacionGuardar">Guardar</string>
+
+    <!--Menu-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!---Cerrar Sesion-->
+    <string name="logout">Cerrar sesión</string>
+    <string name="forget_logout">Olvidar y cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Listado Permisos-->
+    <string name="lblListadoPermisoNumero">No. Permiso:</string>
+    <string name="lblListadoPermisoParaPesqueria">Para pesquería:</string>
+    <string name="lblListadoPermisoEstatus">Estatus:</string>
+    <string name="lblListadoPermisoLugarExpedicion">Lugar Expedición:</string>
+    <string name="lblListadoPermisoFhExpedicion">Fecha Expedición:</string>
+    <string name="lblListadoPermisoFhVigenciaInicio">Vigencia de:</string>
+    <string name="lblListadoPermisoFhVigenciaFin">hasta:</string>
+    <string name="lblListadoPermisoFhVigenciaDuracion">Duración:</string>
+
+    <!--Listado Viajes-->
+    <string name="lblListadoViajeFolio">Folio:</string>
+    <string name="lblListadoViajeEstatus">Estatus:</string>
+    <string name="lblListadoViaje">Estatus:</string>
+    <string name="lblListadoViajeMunicipio">Municipio:</string>
+    <string name="lblListadoViajeComunidad">Comunidad:</string>
+    <string name="lblListadoViajeArtePesca">Arte Pesca:</string>
+    <string name="lblListadoViajeCombustible">Combustible:</string>
+    <string name="lblListadoViajeRecursos">Recursos</string>
+    <string name="lblListadoViajeFhRegistro">Fecha Registro:</string>
+
+
+    <!--Listado Viajes Recursos-->
+    <string name="lblListadoViajeRecurso">Recurso:</string>
+    <string name="lblListadoViajePresentacion">Presentación:</string>
+    <string name="lblListadoViajeCaptura">Captura:</string>
+    <string name="lblListadoViajePrecio">Precio:</string>
+    <string name="lblListadoViajeNoPiezas">No. Piezas:</string>
+
+    <!--Listado Aviso Viajes-->
+    <string name="lblListadoAvisoViajeRecurso">Recurso:</string>
+    <string name="lblListadoAvisoViajePresentacion">Presentación:</string>
+    <string name="lblListadoAvisoViajeCaptura">Captura:</string>
+    <string name="lblListadoAvisoViajePrecio">Precio:</string>
+    <string name="lblListadoAvisoViajeNoPiezas">No. Piezas:</string>
+
+    <!--Listado Avisos-->
+    <string name="lblListadoAvisoFhRegistro">Fecha:</string>
+    <string name="lblListadoAvisoPeriodo">Periodo:</string>
+    <string name="lblListadoAvisoOfnaPesca">Oficina Pesca:</string>
+    <string name="lblListadoAvisoPermiso">Permiso:</string>
+    <string name="lblListadoAvisoSitio">Sitio:</string>
+    <string name="lblListadoAvisoEstatus">Estatus:</string>
+    <string name="lblListadoAvisoRecursos">Recursos:</string>
+
+</resources>

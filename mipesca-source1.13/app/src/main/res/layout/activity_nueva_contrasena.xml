@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NuevaContrasenaActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/lblPescadoRegistro"
+        android:layout_margin="14dp"
+        android:textAlignment="center"
+        android:text="@string/headerRecuperarContrasea"
+        style="@style/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilNuevaContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <EditText
+        android:id="@+id/txtNuevaContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        style="@style/texto"
+        android:hint="@string/lblNuevaContrasena"
+        tools:ignore="Autofill" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilContrasenaConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <EditText
+        android:id="@+id/txtNuevaContrasenaConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        android:hint="@string/lblNuevaContrasenaConfirmar"
+        style="@style/texto"
+        tools:ignore="Autofill" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnNuevaContrasenaCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_weight="1"
+            android:text="@string/btnNuevaContrasenaCancelar"
+            style="@style/boton"
+            />
+        <Button
+            android:id="@+id/btnNuevaContrasenaGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_weight="1"
+            android:text="@string/btnNuevaContrasenaGuardar"
+            style="@style/boton"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

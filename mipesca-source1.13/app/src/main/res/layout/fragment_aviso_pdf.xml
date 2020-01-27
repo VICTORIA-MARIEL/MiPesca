@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.AvisoPDFFragment"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="@string/lblAvisoConfirmacion"
+        style="@style/texto"
+        android:textAlignment="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgDescargarLocal"
+        android:layout_width="0px"
+        android:layout_height="32dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/btnAvisoDescargarLocal"
+        app:srcCompat="@drawable/ic_pdf_web" />
+
+    <ImageView
+        android:id="@+id/imgDescargarExterno"
+        android:layout_width="0px"
+        android:layout_height="32dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/btnAvisoDescargarExterno"
+        app:srcCompat="@drawable/ic_externo_web" />
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+    <TextView
+        android:id="@+id/textCompartir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="@string/lblAvisoCompartir"
+        style="@style/texto"
+        android:textAlignment="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgWhatsapp"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            android:contentDescription="@string/lblAvisoWhatsapp"
+            app:srcCompat="@drawable/ic_whatsapp_web" />
+
+        <ImageView
+            android:id="@+id/imgEmail"
+            android:layout_width="0px"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            android:contentDescription="@string/lblAvisoGmail"
+            app:srcCompat="@drawable/ic_gmail_web" />
+
+        <ImageView
+            android:id="@+id/imgOutlook"
+            android:layout_width="0px"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            android:contentDescription="@string/lblAvisoOutlook"
+            app:srcCompat="@drawable/ic_outook_web" />
+
+        <ImageView
+            android:id="@+id/imgOtros"
+            android:layout_width="0px"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            android:contentDescription="@string/lblAvisoOtros"
+            app:srcCompat="@drawable/ic_email_web" />
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

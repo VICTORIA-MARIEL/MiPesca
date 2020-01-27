@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.ViajeConsultaFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ilFhInicio"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="7dp"
+               >
+
+                <com.santalu.maskedittext.MaskEditText
+                    android:id="@+id/txtFhInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="date"
+                    android:drawableRight="@drawable/ic_calendar"
+                    app:met_mask="##/##/####"
+                    android:hint="@string/lblConsultaViajeFechaInicio"
+                    style="@style/texto"
+                    tools:ignore="Autofill" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ilFhFInal"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="14dp"
+                >
+
+                <com.santalu.maskedittext.MaskEditText
+                    android:id="@+id/txtFhFin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="date"
+                    android:drawableRight="@drawable/ic_calendar"
+                    app:met_mask="##/##/####"
+                    android:hint="@string/lblConsultaViajeFechaFinal"
+                    style="@style/texto"
+                    tools:ignore="Autofill" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnConsultaViajeLimpiar"
+                style="@style/boton"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:text="@string/btnConsultaViajeLimpiar" />
+
+            <Button
+                android:id="@+id/btnConsultaViajeGenerar"
+                style="@style/boton"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:text="@string/btnConsultaViajeGenerar"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblSinRegistros"
+            style="@style/midtexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lblSinRegistros"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_margin="14dp">
+
+
+        </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_plus"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"/>
+</FrameLayout>

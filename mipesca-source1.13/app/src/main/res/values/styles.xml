@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <!-- Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    -->
+        <item name="android:fontFamily">@font/niveau_grotesk_light</item>
+
+    </style>
+
+       <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+           <item name="android:windowBackground">@drawable/mipesca_bg</item>
+       </style>
+
+<!--
+    <style name="estiloBotonUnico" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:fontFamily">@font/niveau_grotesk_light</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="estiloBoton" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="estiloBotonDos" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="estiloLiga" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_margin">14dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="estiloSwitch" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_margin">14dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:switchPadding">10dp</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+
+    <style name="estiloTextfield" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_margin">14dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="estiloEncabezado" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_margin">14dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="estiloEtiqueta" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_margin">14dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="estiloBotton" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_margin">14dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+-->
+
+
+
+    <style name="supertitulo" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">48dp</item>
+        <item name="android:fontFamily">@font/niveau_grotesk_black</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="titulo" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">27dp</item>
+        <item name="android:fontFamily">@font/niveau_grotesk_black</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="etiqueta" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15dp</item>
+        <item name="android:fontFamily">@font/niveau_grotesk_light</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="texto" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/niveau_grotesk_light</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="midtexto" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15dp</item>
+        <item name="android:fontFamily">@font/niveau_grotesk_light</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="midetiqueta" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15dp</item>
+        <item name="android:fontFamily">@font/niveau_grotesk_regular</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="minitexto" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10dp</item>
+        <item name="android:fontFamily">@font/niveau_grotesk_regular</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="boton" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">@font/niveau_grotesk_regular</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>
